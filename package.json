@@ -1,0 +1,29 @@
+{
+  "name": "rollup-issue-repro",
+  "version": "1.0.0",
+  "description": "Reproduces an issue where rollup-plugin-commonjs is having problem with Windows style paths",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "rollup": "npm run clean && rollup -c"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^7.7.1",
+    "pg-copy-streams": "^1.2.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^7.4.11",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.67.4",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.18.1",
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.2"
+  }
+}
